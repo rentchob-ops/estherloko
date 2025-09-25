@@ -1,5 +1,5 @@
 import React from "react";
-import { GraduationCap, Briefcase, Heart, Users, Award, Target, Phone, Instagram } from "lucide-react";
+import { GraduationCap, Briefcase, Heart, Users, Award, Target } from "lucide-react";
 
 const About = () => {
   const values = [
@@ -26,98 +26,112 @@ const About = () => {
   ];
 
   const galleryItems = [
-    { title: "Coiffure Créative 1", src: "https://i.ibb.co/fd33pPjS/profile-pic-5.png" },
-    { title: "Produit Artisanal ESHA", src: "https://i.ibb.co/hJryRMNh/65b77702-a0d0-4fb5-ac39-374f780c6bd0.jpg" },
-    { title: "Événement Professionnel", src: "https://i.ibb.co/YW1T2Qs/event-sample.jpg" },
-    { title: "Coiffure Créative 2", src: "https://i.ibb.co/5xQmYkJ/hair-sample.jpg" },
+    { title: "Coiffure 1", src: "https://i.ibb.co/1RXp8vV/hair1.jpg" },
+    { title: "Coiffure 2", src: "https://i.ibb.co/j3vK5Fw/hair2.jpg" },
+    { title: "Produit artisanal", src: "https://i.ibb.co/t2yLqZP/product1.jpg" },
+    { title: "Événement", src: "https://i.ibb.co/kHxwFvC/event1.jpg" },
+    { title: "Coiffure créative", src: "https://i.ibb.co/WkYhx3k/hair3.jpg" },
+    { title: "Produit artisanal", src: "https://i.ibb.co/VmQfS0R/product2.jpg" },
   ];
 
   return (
-    <div className="bg-primary-900 text-white">
-      {/* HERO */}
-      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 py-20 relative">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#00C2A8]">
+    <div className="pt-16">
+      {/* Hero Section */}
+      <section className="bg-primary-900 text-white py-20 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#00C2A8] mb-6">
           À propos de <span className="text-white">Akpedjè Esther LOKO</span>
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl text-gray-200 mb-6">
-          Je suis votre partenaire de confiance pour l'excellence dans l'accueil professionnel, la beauté capillaire et les produits artisanaux de qualité. Ensemble, créons des expériences mémorables.
+        <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-12">
+          Professionnalisme, créativité et passion. Découvrez mon parcours, mes valeurs et mes réalisations.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="tel:+2290162994910"
-            className="px-8 py-4 bg-[#00C2A8] text-primary-900 font-bold rounded-xl shadow-lg hover:scale-105 transition-transform flex items-center justify-center space-x-2"
-          >
-            <Phone className="w-5 h-5" />
-            <span>Réservez maintenant</span>
-          </a>
-          <a
-            href="https://www.instagram.com/akpedjeesther"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-cyan-600 text-white font-bold rounded-xl shadow-lg hover:scale-105 transition-transform flex items-center justify-center space-x-2"
-          >
-            <Instagram className="w-5 h-5" />
-            <span>Suivez-moi sur Instagram</span>
-          </a>
-        </div>
       </section>
 
-      {/* Parcours */}
-      <section className="py-20 px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-[#00C2A8] mb-12">Mon Parcours Professionnel</h2>
-        <div className="max-w-5xl mx-auto space-y-12 text-center">
+      {/* Biographie / Parcours */}
+      <section className="py-20 px-6 text-center bg-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#00C2A8] mb-8">
+          Mon Parcours Professionnel
+        </h2>
+        <div className="max-w-4xl mx-auto space-y-12 text-left">
           {/* Formation */}
-          <div className="bg-blue-900 bg-opacity-20 p-8 rounded-xl shadow-lg">
-            <GraduationCap className="w-10 h-10 text-[#00C2A8] mx-auto mb-4" />
-            <h3 className="text-2xl font-bold mb-2">Formation Académique</h3>
-            <p className="text-gray-200">
-              Diplômée en <strong>Assistanat et Secrétariat de Direction</strong> de la Haute École de Commerce et de Management (HECM) du Bénin. Cette formation m'a dotée des compétences essentielles pour exceller dans le domaine professionnel.
-            </p>
+          <div className="bg-gray-50 p-8 rounded-2xl shadow-md flex flex-col md:flex-row items-center md:space-x-6">
+            <GraduationCap className="w-12 h-12 text-[#00C2A8] mb-4 md:mb-0" />
+            <div>
+              <h3 className="text-2xl font-bold text-[#0A3764] mb-2">Formation Académique</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Diplômée en <strong>Assistanat et Secrétariat de Direction</strong> 
+                de la Haute École de Commerce et de Management (HECM) du Bénin. Formation qui m'a dotée de compétences techniques et relationnelles essentielles pour exceller dans le domaine professionnel.
+              </p>
+            </div>
           </div>
+
           {/* Expérience */}
-          <div className="bg-blue-900 bg-opacity-20 p-8 rounded-xl shadow-lg">
-            <Briefcase className="w-10 h-10 text-[#00C2A8] mx-auto mb-4" />
-            <h3 className="text-2xl font-bold mb-2">Expérience Professionnelle</h3>
-            <p className="text-gray-200">
-              Hôtesse d'accueil chez <em>La Roche Bénin</em>, où j'ai développé une expertise dans l'accueil client, la gestion événementielle et les relations publiques.
-            </p>
+          <div className="bg-blue-50 p-8 rounded-2xl shadow-md flex flex-col md:flex-row items-center md:space-x-6">
+            <Briefcase className="w-12 h-12 text-[#00C2A8] mb-4 md:mb-0" />
+            <div>
+              <h3 className="text-2xl font-bold text-[#0A3764] mb-2">Expérience Professionnelle</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Hôtesse d'accueil chez <em>La Roche Bénin</em>, spécialisée dans l'accueil client, la gestion événementielle et les relations publiques. Une expérience qui m’a permis de maîtriser l’hospitalité professionnelle et un service client irréprochable.
+              </p>
+            </div>
           </div>
+
           {/* Entrepreneuriat */}
-          <div className="bg-blue-900 bg-opacity-20 p-8 rounded-xl shadow-lg">
-            <Heart className="w-10 h-10 text-[#00C2A8] mx-auto mb-4" />
-            <h3 className="text-2xl font-bold mb-2">Passion & Entrepreneuriat</h3>
-            <p className="text-gray-200">
-              Création de la marque <strong>ESHA 🍯</strong> spécialisée dans la production et la commercialisation de miels artisanaux de qualité premium, alliant tradition et innovation.
-            </p>
+          <div className="bg-yellow-50 p-8 rounded-2xl shadow-md flex flex-col md:flex-row items-center md:space-x-6">
+            <Heart className="w-12 h-12 text-[#00C2A8] mb-4 md:mb-0" />
+            <div>
+              <h3 className="text-2xl font-bold text-[#0A3764] mb-2">Passion & Entrepreneuriat</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Créatrice de la marque <strong>ESHA 🍯</strong>, spécialisée dans les miels artisanaux premium. Passionnée par la coiffure créative et l'entrepreneuriat, je combine tradition et innovation pour offrir des produits et services d'exception.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Valeurs */}
-      <section className="py-20 px-6 bg-gradient-to-b from-primary-900 via-primary-800 to-primary-900 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-[#00C2A8] mb-12">Mes Valeurs Fondamentales</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <section className="py-20 bg-primary-800 text-center text-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#00C2A8] mb-8">Mes Valeurs Fondamentales</h2>
+        <p className="text-gray-200 max-w-2xl mx-auto mb-12">
+          Ces quatre piliers guident chacune de mes actions et définissent mon approche unique dans tous mes domaines d'activité.
+        </p>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value, index) => (
-            <div key={index} className="bg-[#0A3764] bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all">
+            <div key={index} className="bg-white text-[#0A3764] p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="flex justify-center mb-4">{value.icon}</div>
               <h3 className="text-xl font-bold mb-2">{value.title}</h3>
-              <p className="text-gray-200">{value.description}</p>
+              <p>{value.description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Galerie / Réalisations */}
-      <section className="py-20 px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-[#00C2A8] mb-12">Galerie & Réalisations</h2>
-        <p className="text-gray-300 mb-12 max-w-2xl mx-auto">
+      {/* Mission */}
+      <section className="py-20 bg-primary-900 text-white text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">Ma Mission</h2>
+        <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+          Accompagner chaque client avec dévouement et expertise, créer des expériences mémorables 
+          alliant professionnalisme, créativité et authenticité. Mon objectif est de dépasser les attentes tout en préservant les valeurs humaines.
+        </p>
+        <div className="inline-block bg-[#00C2A8] text-primary-900 font-bold text-lg md:text-xl p-4 rounded-xl">
+          💎 Excellence • Innovation • Passion
+        </div>
+      </section>
+
+      {/* Galerie */}
+      <section className="py-20 bg-primary-800 text-center text-white">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#00C2A8] mb-8">Galerie & Réalisations</h2>
+        <p className="text-gray-200 max-w-2xl mx-auto mb-12">
           Découvrez mes créations et prestations. Chaque réalisation reflète mon professionnalisme et ma créativité.
         </p>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {galleryItems.map((item, index) => (
-            <div key={index} className="relative overflow-hidden rounded-2xl shadow-lg group cursor-pointer">
-              <img src={item.src} alt={item.title} className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-500">
+            <div key={index} className="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+              <img
+                src={item.src}
+                alt={item.title}
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-500">
                 <span className="text-white text-lg font-semibold">{item.title}</span>
               </div>
             </div>
@@ -126,29 +140,18 @@ const About = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 px-6 text-center bg-gradient-to-r from-[#00C2A8] to-cyan-500 text-primary-900">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">Prêt(e) à réserver ou à me contacter ?</h2>
-        <p className="text-gray-100 text-lg mb-8 max-w-2xl mx-auto">
-          Je suis là pour répondre à vos besoins en accueil professionnel, beauté capillaire ou produits artisanaux de qualité.
+      <section className="py-20 bg-gradient-to-r from-[#00C2A8] to-cyan-500 text-primary-900 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">Prêt(e) à vivre une expérience unique ?</h2>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+          Que ce soit pour vos événements, votre beauté ou vos produits artisanaux, je suis là pour vous accompagner avec passion et excellence.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-6">
-          <a
-            href="tel:+2290162994910"
-            className="px-8 py-4 bg-white text-primary-900 font-bold rounded-xl shadow-lg flex items-center justify-center space-x-2 hover:scale-105 transition-transform"
-          >
-            <Phone className="w-5 h-5" />
-            <span>Réservez maintenant</span>
-          </a>
-          <a
-            href="https://www.instagram.com/akpedjeesther"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-cyan-600 text-white font-bold rounded-xl shadow-lg flex items-center justify-center space-x-2 hover:scale-105 transition-transform"
-          >
-            <Instagram className="w-5 h-5" />
-            <span>Suivez-moi sur Instagram</span>
-          </a>
-        </div>
+        <a
+          href="tel:+22901629949"
+          className="inline-flex items-center bg-primary-900 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-primary-700 transition-all duration-300"
+        >
+          <Phone className="w-6 h-6 mr-2" />
+          Contactez-moi dès maintenant
+        </a>
       </section>
     </div>
   );
