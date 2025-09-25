@@ -1,5 +1,7 @@
 import React from "react";
-import { GraduationCap, Briefcase, Heart, Users, Award, Target } from "lucide-react";
+import React from "react";
+import { GraduationCap, Briefcase, Heart, Users, Award, Target, Phone } from "lucide-react"; // <-- ajouté Phone
+
 
 const About = () => {
   const values = [
