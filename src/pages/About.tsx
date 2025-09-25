@@ -1,30 +1,12 @@
 import React from "react";
-import React from "react";
-import { GraduationCap, Briefcase, Heart, Users, Award, Target, Phone } from "lucide-react"; // <-- ajouté Phone
-
+import { GraduationCap, Briefcase, Heart, Users, Award, Target, Phone } from "lucide-react";
 
 const About = () => {
   const values = [
-    {
-      icon: <Award className="w-8 h-8 text-[#00C2A8]" />,
-      title: "Professionnalisme",
-      description: "Excellence et rigueur dans chaque mission."
-    },
-    {
-      icon: <Heart className="w-8 h-8 text-[#00C2A8]" />,
-      title: "Créativité",
-      description: "Innovation et originalité dans mes créations."
-    },
-    {
-      icon: <Users className="w-8 h-8 text-[#00C2A8]" />,
-      title: "Relations Humaines",
-      description: "Écoute, empathie et communication bienveillante."
-    },
-    {
-      icon: <Target className="w-8 h-8 text-[#00C2A8]" />,
-      title: "Rigueur",
-      description: "Attention aux détails et respect des engagements."
-    }
+    { icon: <Award className="w-8 h-8 text-[#00C2A8]" />, title: "Professionnalisme", description: "Excellence et rigueur dans chaque mission." },
+    { icon: <Heart className="w-8 h-8 text-[#00C2A8]" />, title: "Créativité", description: "Innovation et originalité dans mes créations." },
+    { icon: <Users className="w-8 h-8 text-[#00C2A8]" />, title: "Relations Humaines", description: "Écoute, empathie et communication bienveillante." },
+    { icon: <Target className="w-8 h-8 text-[#00C2A8]" />, title: "Rigueur", description: "Attention aux détails et respect des engagements." },
   ];
 
   const galleryItems = [
@@ -38,6 +20,7 @@ const About = () => {
 
   return (
     <div className="pt-16">
+
       {/* Hero Section */}
       <section className="bg-primary-900 text-white py-20 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-[#00C2A8] mb-6">
@@ -50,10 +33,9 @@ const About = () => {
 
       {/* Biographie / Parcours */}
       <section className="py-20 px-6 text-center bg-white">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#00C2A8] mb-8">
-          Mon Parcours Professionnel
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#00C2A8] mb-8">Mon Parcours Professionnel</h2>
         <div className="max-w-4xl mx-auto space-y-12 text-left">
+
           {/* Formation */}
           <div className="bg-gray-50 p-8 rounded-2xl shadow-md flex flex-col md:flex-row items-center md:space-x-6">
             <GraduationCap className="w-12 h-12 text-[#00C2A8] mb-4 md:mb-0" />
@@ -87,6 +69,7 @@ const About = () => {
               </p>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -155,6 +138,7 @@ const About = () => {
           Contactez-moi dès maintenant
         </a>
       </section>
+
     </div>
   );
 };
